@@ -25,7 +25,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
@@ -37,13 +36,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 
 .logo {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin: 10px 0;
+  margin: 5px 0 10px;
 }
 
 .hero-video {
@@ -54,55 +54,57 @@ body {
   outline: none;
 }
 
+/* Footer area positioning */
 footer {
   width: 100%;
-  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0 20px 10px;
+  pointer-events: none;
 }
 
 .contact-link {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   text-decoration: none;
   color: #000;
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  z-index: 10;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  pointer-events: auto;
 }
 
 .copyright {
   font-size: 0.6rem;
   color: #000;
   text-align: center;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5px;
+  pointer-events: auto;
 }
 
-/* Mobile */
+/* Mobile refinements */
 @media (max-width: 600px) {
   .logo {
     max-width: 90%;
-    margin-top: 0;
   }
 
   .hero-video {
     max-width: 90vw;
+    margin-bottom: 20px;
   }
 
   .contact-link {
-    font-size: 1.4rem;
-    right: 16px;
-    bottom: 80px;
+    font-size: 1.25rem;
+    margin-right: 8px;
   }
 
   .copyright {
     font-size: 0.55rem;
-    bottom: 20px;
   }
 }
