@@ -13,17 +13,13 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-family: 'Futura', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   text-align: center;
 }
 
 .container {
   width: 100%;
   max-width: 900px;
-  padding: 40px 20px;
+  padding: 20px 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +30,8 @@ body {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hero-video {
@@ -47,10 +44,11 @@ body {
 
 footer {
   width: 100%;
-  padding: 60px 20px 30px; /* padding at bottom for mobile space */
+  padding-bottom: 60px; /* space for bottom iOS bar */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  position: relative;
 }
 
 .contact-link {
@@ -58,30 +56,42 @@ footer {
   font-weight: bold;
   text-decoration: none;
   color: #000;
-  margin-bottom: 10px;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 10;
 }
 
 .copyright {
   font-size: 0.65rem;
   color: #000;
   text-align: center;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 10px;
 }
 
-/* Responsive: Mobile */
+/* Mobile */
 @media (max-width: 600px) {
   .logo {
     max-width: 90%;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 
   .hero-video {
     max-width: 90vw;
+    margin-bottom: 30px;
   }
 
   .contact-link {
     font-size: 1.1rem;
+    bottom: 70px;
+    right: 16px;
   }
 
-  footer {
-    padding-bottom: 60px; /* keeps contact above browser bar */
+  .copyright {
+    font-size: 0.6rem;
+    margin-top: 40px;
   }
 }
