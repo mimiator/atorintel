@@ -1,1 +1,71 @@
+/* styles.css */
+
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/futura.woff2') format('woff2'),
+       url('./fonts/futura.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Futura', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.hero-video {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: none;
+  outline: none;
+}
+
+.contact-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 200px;
+  }
+
+  .hero-video {
+    max-width: 90vw;
+  }
+
+  .contact-link {
+    font-size: 12px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
 
