@@ -39,49 +39,15 @@ body {
 .hero-video {
   width: 100%;
   max-width: 500px;
-  border-radius: 100%;
   margin-bottom: 60px;
+  border: none;
+  outline: none;
 }
 
 footer {
   width: 100%;
   position: relative;
   padding-top: 20px;
-}
-
-.contact-link {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 10px 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.copyright {
-  font-size: 0.8rem;
-  color: #000;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .logo {
-    width: 220px;
-  }
-
-  .hero-video {
-    max-width: 90vw;
-  }
-
-  .contact-link {
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-
-  .copyright {
-    font-size: 0.7rem;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
