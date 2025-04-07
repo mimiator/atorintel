@@ -14,81 +14,76 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
   background-color: #ffffff;
   color: #000000;
   font-family: 'Futura', sans-serif;
-  text-align: center;
-  height: 100%;
   overflow-x: hidden;
+  text-align: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 
 .container {
   width: 100%;
   max-width: 900px;
-  padding: 20px 20px 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  flex-grow: 1;
 }
 
 .logo {
   width: 100%;
   max-width: 600px;
-  height: auto;
-  margin: 5px 0 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .hero-video {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 30px;
   border: none;
   outline: none;
+  margin-bottom: 30px;
 }
 
-/* Footer area positioning */
 footer {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 0 20px 10px;
-  pointer-events: none;
+  margin-top: auto;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .contact-link {
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
   color: #000;
-  margin-right: 10px;
-  margin-bottom: 4px;
-  pointer-events: auto;
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
 }
 
 .copyright {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   color: #000;
   text-align: center;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 5px;
-  pointer-events: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
 }
 
-/* Mobile refinements */
+/* Mobile adjustments */
 @media (max-width: 600px) {
   .logo {
     max-width: 90%;
@@ -96,15 +91,17 @@ footer {
 
   .hero-video {
     max-width: 90vw;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .contact-link {
-    font-size: 1.25rem;
-    margin-right: 8px;
+    font-size: 1.3rem;
+    right: 16px;
+    bottom: 40px;
   }
 
   .copyright {
     font-size: 0.55rem;
+    bottom: 10px;
   }
 }
