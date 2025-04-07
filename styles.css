@@ -7,13 +7,27 @@
   font-display: swap;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   color: #000000;
   font-family: 'Futura', sans-serif;
   text-align: center;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -23,52 +37,51 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .logo {
   width: 100%;
   max-width: 600px;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .hero-video {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border: none;
   outline: none;
 }
 
 footer {
   width: 100%;
-  padding-bottom: 60px; /* space for bottom iOS bar */
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
 }
 
 .contact-link {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 800;
   text-decoration: none;
   color: #000;
   position: fixed;
-  bottom: 70px;
+  bottom: 80px;
   right: 20px;
   z-index: 10;
 }
 
 .copyright {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: #000;
   text-align: center;
-  width: 100%;
-  margin-top: 60px;
-  margin-bottom: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
 }
 
 /* Mobile */
@@ -76,22 +89,20 @@ footer {
   .logo {
     max-width: 90%;
     margin-top: 0;
-    margin-bottom: 5px;
   }
 
   .hero-video {
     max-width: 90vw;
-    margin-bottom: 30px;
   }
 
   .contact-link {
-    font-size: 1.1rem;
-    bottom: 70px;
+    font-size: 1.4rem;
     right: 16px;
+    bottom: 80px;
   }
 
   .copyright {
-    font-size: 0.6rem;
-    margin-top: 40px;
+    font-size: 0.55rem;
+    bottom: 20px;
   }
 }
