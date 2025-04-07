@@ -30,32 +30,16 @@ body {
   position: relative;
 }
 
-.hero-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 .logo {
   width: 300px;
   height: auto;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .hero-video {
   width: 100%;
   max-width: 500px;
   border-radius: 100%;
-  margin: 20px 0;
-}
-
-.subtext {
-  font-size: 1rem;
   margin-bottom: 60px;
 }
 
@@ -88,16 +72,8 @@ footer {
     width: 220px;
   }
 
-  .tagline {
-    font-size: 1rem;
-  }
-
   .hero-video {
     max-width: 90vw;
-  }
-
-  .subtext {
-    font-size: 0.9rem;
   }
 
   .contact-link {
