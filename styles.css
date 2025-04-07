@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -31,23 +31,57 @@ body {
 }
 
 .logo {
-  width: 300px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .hero-video {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   border: none;
   outline: none;
 }
 
 footer {
   width: 100%;
-  position: relative;
-  padding-top: 20px;
+  padding: 60px 20px 30px; /* padding at bottom for mobile space */
   display: flex;
   flex-direction: column;
-  align-items: flex-end
+  align-items: center;
+}
+
+.contact-link {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 0.65rem;
+  color: #000;
+  text-align: center;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .logo {
+    max-width: 90%;
+  }
+
+  .hero-video {
+    max-width: 90vw;
+  }
+
+  .contact-link {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    padding-bottom: 60px; /* keeps contact above browser bar */
+  }
+}
